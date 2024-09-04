@@ -14,4 +14,8 @@ public class Wrappers {
     /*
      * Write your selenium wrappers here
      */
+    public static void categryClick(WebDriver driver,String category){
+      WebElement categoryClick = driver.findElement(By.xpath("//a[@title='" + category + "']"));
+      categoryClick.click();
+    }
 }
